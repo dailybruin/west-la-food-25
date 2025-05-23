@@ -1,7 +1,21 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
+import styled from 'styled-components'
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Map from '../src/images/MapBackground.png';
+import { mediaQueries } from '../src/shared/config';
+
+
+const Background = styled.div`
+  background: url(${Map}) no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 500vh;
+  ${mediaQueries.mobile} {
+    height: 200vh;
+  }
+`;
 
 function App() {
   const [ data, setData ] = useState(null);
@@ -15,7 +29,8 @@ function App() {
   return data && (
     <div className="App">
       <Header/>
-      Hello Daily Bruin!
+      <Background> 
+      </Background>
       <Footer/>
     </div>
   );
