@@ -5,6 +5,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Map from '../src/images/MapBackground.png';
 import { mediaQueries } from '../src/shared/config';
+import NapkinArticleCard from "./components/NapkinArticleCard";
+import SkewersArticleCard from "./components/SkewersArticleCard";
 
 
 const Background = styled.div`
@@ -30,6 +32,9 @@ function App() {
     <div className="App">
       <Header/>
       <Background> 
+        {/* set it to the first index to test the hover effect */}
+        <NapkinArticleCard props={data.articles[0]}/>
+        <SkewersArticleCard props={data.articles[0]} />
       </Background>
       <Footer/>
     </div>
