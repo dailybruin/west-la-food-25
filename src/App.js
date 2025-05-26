@@ -5,6 +5,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Map from '../src/images/MapBackground.png';
 import { mediaQueries } from '../src/shared/config';
+import CoffeeComponent from './components/Coffee';
+import BurgerComponent from './components/Burger';
 
 
 const Background = styled.div`
@@ -30,6 +32,8 @@ function App() {
     <div className="App">
       <Header/>
       <Background> 
+         <CoffeeComponent props={data.articles[0]}/>
+         <BurgerComponent props={data.articles[1]}/>
       </Background>
       <Footer/>
     </div>
