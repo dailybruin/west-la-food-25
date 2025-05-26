@@ -1,14 +1,16 @@
 import styled from 'styled-components';
 import '../App.css';
 import coffee from '../images/coffee.png';
+import { mediaQueries } from "../shared/config";
+
 
 const Wrapper = styled.div`
   position: absolute;
 `;
 
 const Container = styled.div`
-  width: 800px;
-  height: 800px;
+  width: 50em;
+  height: 50em;
   background-image: url(${coffee});
   background-size: contain;
   background-repeat: no-repeat;
@@ -20,8 +22,8 @@ const Container = styled.div`
   justify-content: flex-start;
   position: relative;
 
-  margin-left: 550px;
-  margin-top: 35px;
+  left: 150%;
+  top: 10em;
   z-index:2;
 
   -webkit-mask-image: url(${coffee});
@@ -54,11 +56,12 @@ const Container = styled.div`
     opacity: 1;
   }
 
-  @media (max-width: 480px) {
-    width: 270%;
-    margin-left: 100px;
-    margin-top: 250px;
-  }
+  ${mediaQueries.mobile} {
+    width: 25em;
+    height: 25em;
+    left: 70%;
+    top: 10%;
+}
 `;
 
 const Content = styled.div`

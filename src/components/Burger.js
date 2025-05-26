@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import '../App.css';
 import burger from '../images/burger.png';
+import { mediaQueries } from "../shared/config";
+
 
 const Wrapper = styled.div`
     position: absolute;
@@ -12,8 +14,8 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-    width: 900px;
-    height: 900px;
+    width: 40em;
+    height: 40em;
     background-image: url(${burger}); 
     background-size: contain;
     background-repeat: no-repeat;
@@ -25,8 +27,8 @@ const Container = styled.div`
     justify-content: flex-start;
     position: relative;
 
-    margin-left: 400px;
-    margin-top: 600px;
+    left: 130%;
+    top: 60em;
     z-index: 1;
     
     /* to make the surrounding not impacted upon hover, only the article card content shape */
@@ -58,11 +60,12 @@ const Container = styled.div`
         opacity: 1;
     }
 
-    @media (max-width: 480px) {
-        width: 800%;
-        margin-left: 30px;
-        margin-top: 0px;
-    }
+    ${mediaQueries.mobile} {
+      width: 20em;
+      height: 20em;
+      left: 50%;
+      top: 25em;
+  }
 `;
 
 const Content = styled.div`

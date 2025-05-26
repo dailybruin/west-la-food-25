@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import '../App.css';
-import fries from '../images/fries.png';
+import pizza from '../images/pizza.png';
 import { mediaQueries } from "../shared/config";
 
 
@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 const Container = styled.div`
     width: 50em;
     height: 50em;
-    background-image: url(${fries}); 
+    background-image: url(${pizza}); 
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,13 +27,13 @@ const Container = styled.div`
     justify-content: flex-start;
     position: relative;
 
-    left: 100%;
-    bottom: -220em;
+    left: 80%;
+    bottom: -280em;
     z-index: 1;
     
     /* to make the surrounding not impacted upon hover, only the article card content shape */
-    -webkit-mask-image: url(${fries});
-    mask-image: url(${fries});
+    -webkit-mask-image: url(${pizza});
+    mask-image: url(${pizza});
     mask-size: contain;
     mask-repeat: no-repeat;
     mask-position: center;
@@ -49,7 +49,7 @@ const Container = styled.div`
         right: 0;
         bottom: 0;
         background-color: #FFF3B0;
-        mask-image: url(${fries});
+        mask-image: url(${pizza});
         mask-size: contain;
         mask-position: center;
         mask-repeat: no-repeat;
@@ -61,10 +61,10 @@ const Container = styled.div`
     }
 
     ${mediaQueries.mobile} {
-        width: 30em;
-        height: 30em;
+        width: 25em;
+        height: 25em;
         left: 30%;
-        bottom: -85em;
+        bottom: -115em;
     }
 `;
 
@@ -110,7 +110,7 @@ const Byline = styled.p`
   }
 `;
 
-const FriesArticleCard = ({ props }) => {
+const Pizza = ({ props }) => {
   return (
     <Wrapper>
         <Container>
@@ -123,4 +123,4 @@ const FriesArticleCard = ({ props }) => {
   );
 };
 
-export default FriesArticleCard;
+export default Pizza;

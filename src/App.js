@@ -9,6 +9,10 @@ import NapkinArticleCard from "./components/NapkinArticleCard";
 import SkewersArticleCard from "./components/SkewersArticleCard";
 import CoffeeComponent from './components/Coffee';
 import BurgerComponent from './components/Burger';
+import FriesArticleCard from './components/FriesArticleCard';
+import Pizza from './components/Pizza';
+import Landing from './components/Landing';
+
 
 
 const Background = styled.div`
@@ -33,12 +37,15 @@ function App() {
   return data && (
     <div className="App">
       <Header/>
+      <Landing/>
       <Background> 
         {/* set it to the first index to test the hover effect */}
         <NapkinArticleCard props={data.articles[0]}/>
-        <SkewersArticleCard props={data.articles[0]} />
-         <CoffeeComponent props={data.articles[0]}/>
-         <BurgerComponent props={data.articles[1]}/>
+        <SkewersArticleCard props={data.articles[1]} />
+         <CoffeeComponent props={data.articles[2]}/>
+         <BurgerComponent props={data.articles[3]}/>
+         <FriesArticleCard props={data.articles[4]}/>
+         <Pizza props={data.articles[2]}/>
       </Background>
       <Footer/>
     </div>

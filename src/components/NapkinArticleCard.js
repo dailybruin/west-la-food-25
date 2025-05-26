@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import '../App.css';
 import napkin from '../images/napkin.png'; // napkin image
+import { mediaQueries } from "../shared/config";
+
 
 const Wrapper = styled.div`
     position: absolute;
@@ -12,8 +14,8 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-    width: 500px;
-    height: 500px;
+    width: 50em;
+    height: 50em;
     background-image: url(${napkin}); 
     background-size: contain;
     background-repeat: no-repeat;
@@ -25,8 +27,8 @@ const Container = styled.div`
     justify-content: flex-start;
     position: relative;
 
-    margin-left: 1100px;
-    margin-top: 1800px;
+    bottom: -170em;
+    left: 90%;
     
     /* to make the surrounding not impacted upon hover, only the article card content shape */
     -webkit-mask-image: url(${napkin});
@@ -55,11 +57,12 @@ const Container = styled.div`
         opacity: 1;
     }
     
-    @media (max-width: 480px) {
-        width: 270%;
-        margin-left: 100px;
-        margin-top: 250px;
-    }
+    ${mediaQueries.mobile} {
+      width: 20em;
+      height: 20em;
+      left: -60%;
+      bottom: 45em;
+  }
 `;
 
 const Content = styled.div`

@@ -8,10 +8,10 @@ const DBHeader = styled("div")`
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background: black;
+  background: #FCF5EA;
+  color: #737373;
   width: 100%;
   padding: 0.2em 0;
-  color: white;
   font-family: 'ITC Century';
   font-style: normal;
   font-weight: 400;
@@ -19,7 +19,6 @@ const DBHeader = styled("div")`
   text-transform: uppercase;
   font-size: 18px;
   line-height: 21.6px;
-  /* border-bottom: 2px solid black; */
 `;
 
 const Header = () => {

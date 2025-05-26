@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import '../App.css';
 import skewers from '../images/skewers.png'; // napkin image
+import { mediaQueries } from "../shared/config";
+
 
 const Wrapper = styled.div`
     position: absolute;
@@ -12,8 +14,8 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-    width: 600px;
-    height: 600px;
+    width: 50em;
+    height: 50em;
     background-image: url(${skewers}); 
     background-size: contain;
     background-repeat: no-repeat;
@@ -25,8 +27,8 @@ const Container = styled.div`
     justify-content: flex-start;
     position: relative;
 
-    margin-left: 300px;
-    margin-top: 1600px;
+    left: 50%;
+    bottom: -120em;
     
     /* to make the surrounding not impacted upon hover, only the article card content shape */
     -webkit-mask-image: url(${skewers});
@@ -55,11 +57,12 @@ const Container = styled.div`
         opacity: 1;
     }
 
-    @media (max-width: 480px) {
-        width: 800%;
-        margin-left: 30px;
-        margin-top: 0px;
-    }
+    ${mediaQueries.mobile} {
+      width: 25em;
+      height: 25em;
+      left: 10%;
+      bottom: -45em;
+  }
 `;
 
 const Content = styled.div`
