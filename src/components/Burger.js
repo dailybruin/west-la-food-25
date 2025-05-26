@@ -12,8 +12,8 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-    width: 900px;
-    height: 900px;
+    width: 1200px;
+    height: 1200px;
     background-image: url(${burger}); 
     background-size: contain;
     background-repeat: no-repeat;
@@ -25,8 +25,8 @@ const Container = styled.div`
     justify-content: flex-start;
     position: relative;
 
-    margin-left: 400px;
-    margin-top: 600px;
+    margin-left: 200px;
+    margin-top: 400px;
     z-index: 1;
     
     /* to make the surrounding not impacted upon hover, only the article card content shape */
