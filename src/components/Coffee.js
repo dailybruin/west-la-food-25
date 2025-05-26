@@ -7,8 +7,8 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-  width: 800px;
-  height: 800px;
+  width: 1000px;
+  height: 1000px;
   background-image: url(${coffee});
   background-size: contain;
   background-repeat: no-repeat;
@@ -20,8 +20,8 @@ const Container = styled.div`
   justify-content: flex-start;
   position: relative;
 
-  margin-left: 550px;
-  margin-top: 35px;
+  margin-left: 500px;
+  margin-top: -60px;
   z-index:2;
 
   -webkit-mask-image: url(${coffee});
