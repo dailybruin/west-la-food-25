@@ -3,18 +3,17 @@ import '../App.css';
 import skewers from '../images/skewers.png'; // napkin image
 
 const Wrapper = styled.div`
+    position: absolute;
     margin: 1.5%;
-    margin-left: 7%;
     
-    @media (max-width: 480px) {
-        margin-left: 0%;
-        margin-top: 20%;
-    }
+    // @media (max-width: 480px) {
+    //     position: absolute;
+    // }
 `;
 
 const Container = styled.div`
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     background-image: url(${skewers}); 
     background-size: contain;
     background-repeat: no-repeat;
@@ -25,6 +24,9 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     position: relative;
+
+    margin-left: 300px;
+    margin-top: 1600px;
     
     /* to make the surrounding not impacted upon hover, only the article card content shape */
     -webkit-mask-image: url(${skewers});
@@ -54,7 +56,9 @@ const Container = styled.div`
     }
 
     @media (max-width: 480px) {
-        width: 80%;
+        width: 800%;
+        margin-left: 30px;
+        margin-top: 0px;
     }
 `;
 

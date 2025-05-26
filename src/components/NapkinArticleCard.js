@@ -3,13 +3,12 @@ import '../App.css';
 import napkin from '../images/napkin.png'; // napkin image
 
 const Wrapper = styled.div`
-    margin: 1.5%;
-    margin-left: 7%;
+    position: absolute;
     
-    @media (max-width: 480px) {
-        margin-left: 0%;
-        margin-top: 20%;
-    }
+    // @media (max-width: 480px) {
+    //     margin-left: 0%;
+    //     margin-top: 20%;
+    // }
 `;
 
 const Container = styled.div`
@@ -25,6 +24,9 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     position: relative;
+
+    margin-left: 1100px;
+    margin-top: 1800px;
     
     /* to make the surrounding not impacted upon hover, only the article card content shape */
     -webkit-mask-image: url(${napkin});
@@ -54,7 +56,9 @@ const Container = styled.div`
     }
     
     @media (max-width: 480px) {
-        width: 80%;
+        width: 270%;
+        margin-left: 100px;
+        margin-top: 250px;
     }
 `;
 
