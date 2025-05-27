@@ -19,9 +19,9 @@ const Background = styled.div`
   background: url(${Map}) no-repeat center center;
   background-size: cover;
   width: 100%;
-  height: 500vh;
+  height: 600vh;
   ${mediaQueries.mobile} {
-    height: 200vh;
+    height: 250vh;
   }
 `;
 
