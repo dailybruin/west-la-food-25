@@ -22,7 +22,7 @@ const Container = styled.div`
   justify-content: flex-start;
   position: relative;
 
-  left: 150%;
+  left: 20%;
   top: 10em;
   z-index:2;
 
@@ -59,7 +59,7 @@ const Container = styled.div`
   ${mediaQueries.mobile} {
     width: 25em;
     height: 25em;
-    left: 70%;
+    left: 30%;
     top: 10%;
 }
 `;

@@ -56,13 +56,14 @@ const Container = styled.div`
     &:hover > div {
         opacity: 1;
     }
-    
+
     ${mediaQueries.mobile} {
       width: 20em;
       height: 20em;
-      left: -60%;
-      bottom: 45em;
+      left: 5%;
+      bottom: -65em;
   }
+  
 `;
 
 const Content = styled.div`
@@ -79,7 +80,7 @@ const Content = styled.div`
 const Title = styled.h2`
     font-family: Modak;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.5em;
     line-height: 90%;
     letter-spacing: 0%;
     text-align: center;

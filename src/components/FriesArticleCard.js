@@ -63,7 +63,7 @@ const Container = styled.div`
     ${mediaQueries.mobile} {
         width: 30em;
         height: 30em;
-        left: 30%;
+        left: 5%;
         bottom: -85em;
     }
 `;

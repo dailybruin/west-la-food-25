@@ -83,7 +83,7 @@ const Content = styled.div`
 const Title = styled.h2`
     font-family: Modak;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 1.5em;
     line-height: 90%;
     letter-spacing: 0%;
     text-align: center;
