@@ -8,8 +8,7 @@ const DBHeader = styled("div")`
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background: #FCF5EA;
-  color: #737373;
+  background-color: #FCF5EA;
   width: 100%;
   padding: 0.2em 0;
   font-family: 'ITC Century';
