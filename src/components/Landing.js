@@ -16,7 +16,6 @@ const Container = styled.div`
 const Background = styled.img`
   width: 100%;
   height: auto;
-  max-height: 100vh;
   object-fit: contain;
 `;
 

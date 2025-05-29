@@ -61,10 +61,34 @@ const Container = styled.div`
     }
 
     ${mediaQueries.mobile} {
-        width: 30em;
-        height: 30em;
-        left: 5%;
-        bottom: -85em;
+        width: 30em !important;
+        height: 30em !important;
+        left: 5% !important;
+        bottom: -85em !important;
+    }
+
+    @media (min-width: 1000px) {
+      width: 50em;
+      height: 50em;
+      left: 40%;
+    }
+
+    @media (min-width: 900px) and (max-width: 1000px) {
+      width: 50em;
+      height: 50em;
+      left: 20%;
+    }
+
+    @media (min-width: 600px) and (max-width: 900px) {
+      width: 35em;
+      height: 35em;
+      left: 20%;
+    }
+
+    @media (min-width: 100px) and (max-width: 600px) {
+      width: 10em;
+      height: 10em;
+      left: 20%;
     }
 `;
 

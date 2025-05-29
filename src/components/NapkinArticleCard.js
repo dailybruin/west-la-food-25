@@ -58,11 +58,35 @@ const Container = styled.div`
     }
 
     ${mediaQueries.mobile} {
-      width: 20em;
-      height: 20em;
-      left: 5%;
-      bottom: -65em;
-  }
+      width: 20em !important;
+      height: 20em !important;
+      left: 5% !important;
+      bottom: -65em !important;
+    }
+
+     @media (min-width: 1000px) {
+      width: 50em;
+      height: 50em;
+      left: 40%;
+    }
+
+    @media (min-width: 900px) and (max-width: 1000px) {
+      width: 50em;
+      height: 50em;
+      left: 20%;
+    }
+
+    @media (min-width: 600px) and (max-width: 900px) {
+      width: 35em;
+      height: 35em;
+      left: 20%;
+    }
+
+    @media (min-width: 100px) and (max-width: 600px) {
+      width: 10em;
+      height: 10em;
+      left: 20%;
+    }
   
 `;
 

@@ -7,10 +7,6 @@ import { mediaQueries } from "../shared/config";
 const Wrapper = styled.div`
     position: absolute;
     margin: 1.5%;
-    
-    // @media (max-width: 480px) {
-    //     position: absolute;
-    // }
 `;
 
 const Container = styled.div`
@@ -61,11 +57,35 @@ const Container = styled.div`
     }
 
     ${mediaQueries.mobile} {
-      width: 20em;
-      height: 20em;
-      left: 50%;
-      top: 25em;
-  }
+      width: 20em !important;
+      height: 20em !important;
+      left: 50% !important;
+      top: 25em !important;
+    }
+
+   @media (min-width: 1000px) {
+      width: 50em;
+      height: 50em;
+      left: 40%;
+    }
+
+    @media (min-width: 900px) and (max-width: 1000px) {
+      width: 50em;
+      height: 50em;
+      left: 20%;
+    }
+
+    @media (min-width: 600px) and (max-width: 900px) {
+      width: 35em;
+      height: 35em;
+      left: 20%;
+    }
+
+    @media (min-width: 100px) and (max-width: 600px) {
+      width: 10em;
+      height: 10em;
+      left: 20%;
+    }
 `;
 
 const Content = styled.div`
