@@ -45,7 +45,7 @@ function App() {
          <CoffeeComponent props={data.articles[2]}/>
          <BurgerComponent props={data.articles[3]}/>
          <FriesArticleCard props={data.articles[4]}/>
-         <Pizza props={data.articles[2]}/>
+         <Pizza props={data.articles[5]}/>
       </Background>
       <Footer/>
     </div>
