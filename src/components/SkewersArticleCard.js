@@ -64,7 +64,7 @@ const Container = styled.div`
       bottom: -50em !important;
     }
 
-       @media (min-width: 1000px) {
+    @media (min-width: 1000px) {
       width: 50em;
       height: 50em;
       left: 40%;
@@ -108,6 +108,12 @@ const Title = styled.h2`
     letter-spacing: 0%;
     text-align: center;
     margin-top: -30%;
+
+  ${mediaQueries.mobile} {
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -2%;
+  }
 
   @media (max-width: 480px) {
     font-size: 12px;

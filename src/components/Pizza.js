@@ -113,6 +113,12 @@ const Title = styled.h2`
     text-align: center;
     margin-top: -30%;
 
+  ${mediaQueries.mobile} {
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -2%;
+  }
+
   @media (max-width: 480px) {
     font-size: 12px;
     line-height: 100%;
