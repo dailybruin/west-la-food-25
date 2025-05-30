@@ -61,10 +61,10 @@ const Container = styled.div`
     }
 
     ${mediaQueries.mobile} {
-        width: 30em !important;
-        height: 30em !important;
-        left: 5% !important;
-        bottom: -85em !important;
+        width: 18em !important;
+        height: 18em !important;
+        left: 0% !important;
+        bottom: -70em !important;
     }
 
     @media (min-width: 1000px) {

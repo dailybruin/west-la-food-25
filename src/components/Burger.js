@@ -57,10 +57,10 @@ const Container = styled.div`
     }
 
     ${mediaQueries.mobile} {
-      width: 20em !important;
-      height: 20em !important;
-      left: 50% !important;
-      top: 25em !important;
+      width: 18em !important;
+      height: 18em !important;
+      left: 20% !important;
+      top: 18em !important;
     }
 
    @media (min-width: 1000px) {
