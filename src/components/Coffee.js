@@ -134,7 +134,14 @@ const CoffeeArticleCard = ({ props }) => {
     <Wrapper>
       <Container>
         <Content>
-          <Title>{props.article_title}</Title>
+        <a
+            href={props.article_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: 'none', color: 'inherit' }}
+          >
+            <Title>{props.article_title}</Title>
+          </a>
           <Byline>{props.article_byline}</Byline>
         </Content>
       </Container>
