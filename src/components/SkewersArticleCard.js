@@ -27,7 +27,7 @@ const Container = styled.div`
     justify-content: flex-start;
     position: relative;
 
-    left: 50%;
+    left: 45%;
     bottom: -120em;
     
     /* to make the surrounding not impacted upon hover, only the article card content shape */

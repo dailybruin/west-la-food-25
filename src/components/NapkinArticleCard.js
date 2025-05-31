@@ -28,7 +28,7 @@ const Container = styled.div`
     position: relative;
 
     bottom: -170em;
-    left: 90%;
+    left: 50%;
     
     /* to make the surrounding not impacted upon hover, only the article card content shape */
     -webkit-mask-image: url(${napkin});
@@ -60,7 +60,7 @@ const Container = styled.div`
     ${mediaQueries.mobile} {
       width: 23em !important;
       height: 23em !important;
-      left: 20% !important;
+      left: 10% !important;
       bottom: -68em !important;
     }
 

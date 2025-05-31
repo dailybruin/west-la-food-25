@@ -14,8 +14,8 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-    width: 50em;
-    height: 50em;
+    width: 45em;
+    height: 45em;
     background-image: url(${pizza}); 
     background-size: contain;
     background-repeat: no-repeat;
@@ -27,8 +27,8 @@ const Container = styled.div`
     justify-content: flex-start;
     position: relative;
 
-    left: 80%;
-    bottom: -280em;
+    left: 40%;
+    bottom: -270em;
     z-index: 1;
     
     /* to make the surrounding not impacted upon hover, only the article card content shape */
@@ -63,7 +63,7 @@ const Container = styled.div`
     ${mediaQueries.mobile} {
         width: 20em !important;
         height: 20em !important;
-        left: 40% !important;
+        left: 30% !important;
         bottom: -112em !important;
     }
     
